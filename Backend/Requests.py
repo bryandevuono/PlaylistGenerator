@@ -13,4 +13,15 @@ def get_spotify_access_token(client_id, client_secret):
     auth_response = requests.post(auth_url, headers=headers, data=data)
     return auth_response.json().get('access_token')
 
-
+def search_spotify_tracks(query, access_token, limit=10):
+    url = "https://api.spotify.com/v1/search"
+    headers = {
+        'Authorization': f'Bearer {access_token}'
+    }
+    params = {
+        'q': query,
+        'type': 'track',
+        'limit': limit
+    }
+    response = requests.get(url, headers=headers, params=params)
+    return response.json()
