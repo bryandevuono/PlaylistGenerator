@@ -9,7 +9,7 @@ body{ background-color: rgb(0, 0, 0);}
 .spotifylogo{
   height: 100px;
   width: 200px;
-  margin-top: -20px;
+  margin-top: -10px;
   display: block;
   margin-left: auto;
 }
@@ -17,8 +17,8 @@ body{ background-color: rgb(0, 0, 0);}
 .headertext{
   margin-left: auto;
   position: absolute;
-  top: 69px;
-  margin-top: -20px;
+  top: 51px;
+  margin-top: -10px;
   right: 170px;
   font-family: arial;
   font-weight: bold;
@@ -26,12 +26,25 @@ body{ background-color: rgb(0, 0, 0);}
 }
 
 .homepagetext{
-  padding: 70px 0;
+  padding: 30px 0;
   text-align: center;
   border-radius: 25px;
   font-family: arial;
+  left: 50%;
+  right: 50%;
 }
+
 .homepage{
   border: 3px solid rgb(255, 255, 255);
   border-radius: 25px;
+  background-color: black;
+  padding: 20px 0;
+}
+
+.text{
+  margin-top: -20px;
+  text-align: center;
+  font-family: arial;
+  left: 50%;
+  right: 50%
 }
