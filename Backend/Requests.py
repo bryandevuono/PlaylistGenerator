@@ -53,7 +53,8 @@ def search_tracks_by_query(query, limit, SPOTIPY_CLIENT_ID, SPOTIPY_CLIENT_SECRE
     results = sp.search(q=query, type='track', limit=limit)
     return [track['uri'] for track in results['tracks']['items']]
 
-def create_playlist(song_uris, SPOTIPY_CLIENT_ID, SPOTIPY_CLIENT_SECRET):
+
+def create_playlist(song_uris, SPOTIPY_CLIENT_ID, SPOTIPY_CLIENT_SECRET, name):
     SPOTIPY_REDIRECT_URI = 'http://localhost:8888/callback'
 
     scope = "playlist-modify-public playlist-modify-private"
@@ -63,7 +64,8 @@ def create_playlist(song_uris, SPOTIPY_CLIENT_ID, SPOTIPY_CLIENT_SECRET):
                                                 redirect_uri=SPOTIPY_REDIRECT_URI,
                                                 scope=scope))
     user_id = sp.current_user()['id']
-    playlist = sp.user_playlist_create(user_id, "My Playlist", public=True)
+    playlist = sp.user_playlist_create(user_id, name, public=True)
     sp.playlist_add_items(playlist['id'], song_uris)
     print(f"Playlist '{playlist['name']}' created with {len(song_uris)} songs.")
     print(f"Shareable link: {playlist['external_urls']['spotify']}")
+    return playlist['external_urls']['spotify']
