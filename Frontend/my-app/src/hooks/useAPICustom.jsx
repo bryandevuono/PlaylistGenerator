@@ -14,7 +14,9 @@ const useAPICustom = ({query}) =>{
                 .then(response => response.json())
                 .then(data => {
                     console.log(data.result);
-                    navigate(`/result/${data.result}`);
+                    let link = data.result;
+                    console.log(link);
+                    navigate("/result", {state: {link}});
                 });
         }catch (error){
             navigate('/')

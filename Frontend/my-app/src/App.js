@@ -13,7 +13,7 @@ function App() {
           <Route path="/mood" element={<Home />} />
           <Route path="/genre" element={<Home />} />
           <Route path="/custom" element={<Custom />} />
-          <Route path="/result:url" element={<Result/>}/>
+          <Route path="/result" element={<Result/>}/>
         </Routes>
     </Router>
   );

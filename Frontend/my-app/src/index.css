@@ -78,3 +78,9 @@ body {
   left: 50%;
   right: 50%
 }
+
+.preview{
+  padding: 30px 30px;
+  left: 35%;
+  position: absolute;
+}
