@@ -12,7 +12,7 @@ const Custom = () => {
   };
 
   return (
-    <div>
+    <div className='homepage'>
       <div className='text'>
         <br />
         <br />
@@ -22,7 +22,7 @@ const Custom = () => {
       <br />
       <br />
       <div className='textarea'>
-        <textarea id='textarea'></textarea>
+        <textarea id='textarea' className='textbox'></textarea>
       </div>
       <br />
       <br />

@@ -83,7 +83,6 @@ body {
 
 .preview{
   padding: 30px 30px;
-  left: 35%;
   position: absolute;
   color: white;
 }
@@ -102,5 +101,10 @@ body {
   text-align: center;
   color: white;
   font-family: arial;
-  height: 500px;
+  height: 750px;
+}
+
+.textbox{
+  height: 100px;
+  width: 300px;
 }

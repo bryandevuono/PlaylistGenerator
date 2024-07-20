@@ -1,6 +1,6 @@
 import {useState} from 'react';
 import '../index.css';
-import { useLocation} from 'react-router-dom';
+import { useLocation, Link} from 'react-router-dom';
 
 const Result = () =>{
   const [preview, setPreview] = useState(false);
@@ -26,21 +26,21 @@ const Result = () =>{
       <br/><br/>
       <div className='resulttext'>
         <p>Here is your Playlist!<br/>You can copy the link to access it:</p>
-        <p>{url}</p>
+        <p>{url} <button>Copy</button></p>
+        <button onClick={showPreview}>Show preview</button>
+
+        {preview ?<div>
+        <br/>
+        <iframe
+          src={`https://open.spotify.com/embed/playlist/${playlistId}`}
+          width="500"
+          height="580"
+          allow="encrypted-media"
+          title="Spotify Playlist"
+        ></iframe>
+        <br/><br/><Link to='/'><button>Home</button></Link>
+        </div>: null}
       </div>
-
-      {preview ?<div className='preview'>
-      <h2>Spotify Playlist Preview</h2>
-      <iframe
-        src={`https://open.spotify.com/embed/playlist/${playlistId}`}
-        width="300"
-        height="380"
-        allow="encrypted-media"
-        title="Spotify Playlist"
-      ></iframe>
-      </div>: null}
-
-      <button className='previewbutton' onClick={showPreview}>Show preview</button>
     </div>
   );
 };
