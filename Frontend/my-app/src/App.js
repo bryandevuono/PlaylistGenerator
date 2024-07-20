@@ -1,5 +1,6 @@
 import React from 'react';
 import './index.css';
+import './btn.css';
 import Header from './components/Header.jsx'
 import { BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 import Custom from './components/CustomPlaylist.jsx';
@@ -37,11 +38,11 @@ function Home() {
       <br/><br/>
 
       <div className='buttons'>
-      <button className='button'>Genre</button>
+      <button className='btn'>Genre</button>
       <br/><br/>
-      <button className='button'>Mood</button>
+      <button className='btn'>Mood</button>
       <br/><br/>
-      <Link to = '/custom'><button className='button'>Custom</button></Link>
+      <Link to = '/custom'><button className='btn'>Custom</button></Link>
       </div>
     </div>
   );

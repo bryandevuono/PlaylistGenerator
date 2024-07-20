@@ -1,11 +1,12 @@
 import {useState} from 'react';
 import '../index.css';
+import '../btn.css';
 import { useLocation, Link} from 'react-router-dom';
 
 const Result = () =>{
   const [preview, setPreview] = useState(false);
 
-  const showPreview = (ref) => {
+  const showPreview = () => {
     if(!preview){
     setTimeout(() => {
       setPreview(true)
@@ -26,20 +27,22 @@ const Result = () =>{
       <br/><br/>
       <div className='resulttext'>
         <p>Here is your Playlist!<br/>You can copy the link to access it:</p>
-        <p>{url} <button>Copy</button></p>
-        <button onClick={showPreview}>Show preview</button>
+        <p>{url} <button className='btn-small'>Copy</button></p>
+        <button onClick={showPreview} className='btn'>Show preview</button>
 
         {preview ?<div>
         <br/>
         <iframe
           src={`https://open.spotify.com/embed/playlist/${playlistId}`}
           width="500"
-          height="580"
+          height="480"
           allow="encrypted-media"
           title="Spotify Playlist"
         ></iframe>
-        <br/><br/><Link to='/'><button>Home</button></Link>
+        <br/><br/>
         </div>: null}
+        
+        <Link to='/'><button className='home'>Home</button></Link>
       </div>
     </div>
   );
