@@ -1,6 +1,6 @@
 import {useNavigate} from 'react-router-dom';
 
-const useAPICustom = ({query}) =>{
+const useAPICustom = ({query, token}) =>{
     const navigate = useNavigate()
     const Fetch = (query) => {
         const requestOptions = {
