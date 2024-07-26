@@ -12,6 +12,11 @@ body {
   background-position: center;
 }
 
+.headerimage{
+  position: absolute;
+  left: 2%;
+  top: 1.5%;
+}
 .spotifylogo{
   height: 100px;
   width: 200px;
@@ -107,4 +112,20 @@ body {
 .textbox{
   height: 100px;
   width: 300px;
+}
+
+.dropdown{
+  margin-top: -20px;
+  position: relative;
+  left: 759px;
+}
+
+.dropdownbox{
+  width: 190px;
+  height: 50px;
+  text-align: center;
+}
+
+.previewbox{
+  border-radius: 15px;
 }

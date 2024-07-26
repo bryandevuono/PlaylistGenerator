@@ -106,7 +106,7 @@
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-    width: 5%;
+    width: 150px;
 }
 .home:disabled {
     cursor: default;
@@ -121,6 +121,7 @@
   }
 
   .homepsn{
-    top: 5%;
-    left: 555px;
+    top: 90%;
+    left: 46%;
+    position: absolute;
 }

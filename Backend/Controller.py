@@ -32,7 +32,7 @@ def process_query(query):
         access_token = Requests.get_spotify_access_token(client_id, client_secret)
         print(access_token)
         #generate the songs
-        search_results = Requests.search_tracks_by_query(query, 20, client_id, client_secret)
+        search_results = Requests.search_tracks_by_query(query, 12, client_id, client_secret)
         print("Track URIs:")
         for uri in search_results:
             print(uri)
@@ -69,5 +69,8 @@ def post_query():
     except Exception as e:
         print(e)
 
+@app.route('/api/loggedin', methods=['GET'])
+def printer():
+    return 'Return back to the web app <-'
 if __name__ == '__main__':
     app.run(debug=True)

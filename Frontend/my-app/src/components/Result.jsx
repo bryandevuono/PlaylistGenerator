@@ -32,7 +32,7 @@ const Result = () =>{
 
         {preview ?<div>
         <br/>
-        <iframe
+        <iframe className='previewbox'
           src={`https://open.spotify.com/embed/playlist/${playlistId}`}
           width="500"
           height="480"
@@ -42,7 +42,9 @@ const Result = () =>{
         <br/><br/>
         </div>: null}
         
-        <Link to='/'><button className='home'>Home</button></Link>
+        <div className='homepsn'>
+          <Link to='/'><button className='home'>Home</button></Link>
+        </div>
       </div>
     </div>
   );

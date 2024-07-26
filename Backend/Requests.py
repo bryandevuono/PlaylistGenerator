@@ -45,7 +45,7 @@ def search_tracks_by_query(query, limit, SPOTIPY_CLIENT_ID, SPOTIPY_CLIENT_SECRE
     SPOTIPY_REDIRECT_URI = 'http://localhost:8888/callback'
 
     scope = "playlist-modify-public playlist-modify-private"
-
+    #sp = spotipy.Spotify(auth=access_token)
     sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=SPOTIPY_CLIENT_ID,
                                                 client_secret=SPOTIPY_CLIENT_SECRET,
                                                 redirect_uri=SPOTIPY_REDIRECT_URI,

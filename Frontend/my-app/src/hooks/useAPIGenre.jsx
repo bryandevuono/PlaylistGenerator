@@ -27,4 +27,4 @@ const useAPIGenre = ({genre}) =>{
     return Fetch
 }
 
-export default useAPICustom
+export default useAPIGenre

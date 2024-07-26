@@ -4,15 +4,17 @@ import './btn.css';
 import Header from './components/Header.jsx'
 import { BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 import Custom from './components/CustomPlaylist.jsx';
+import Genre from './components/GenrePlaylist.jsx';
 import Result from './components/Result.jsx';
+import Mood from './components/MoodPlaylist.jsx';
 function App() {
   return (
     <Router>
         <Header/>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/mood" element={<Home />} />
-          <Route path="/genre" element={<Home />} />
+          <Route path="/mood" element={<Mood />} />
+          <Route path="/genre" element={<Genre />} />
           <Route path="/custom" element={<Custom />} />
           <Route path="/result" element={<Result/>}/>
         </Routes>
@@ -38,9 +40,9 @@ function Home() {
       <br/><br/>
 
       <div className='buttons'>
-      <button className='btn'>Genre</button>
+      <Link to ='/genre'><button className='btn'>Genre</button></Link>
       <br/><br/>
-      <button className='btn'>Mood</button>
+      <Link to='/mood'><button className='btn'>Mood</button></Link>
       <br/><br/>
       <Link to = '/custom'><button className='btn'>Custom</button></Link>
       </div>
