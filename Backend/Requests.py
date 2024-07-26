@@ -10,17 +10,12 @@ def search_tracks_by_genre(genre, limit, token):
     return [track['uri'] for track in results['tracks']['items']]
 
 def search_tracks_by_query(query, limit, token):
-
     sp = spotipy.Spotify(auth=token)
     results = sp.search(q=query, type='track', limit=limit)
     return [track['uri'] for track in results['tracks']['items']]
 
 
 def create_playlist(song_uris, name, token):
-    SPOTIPY_REDIRECT_URI = 'http://localhost:8888/callback'
-
-    scope = "playlist-modify-public playlist-modify-private"
-
     sp = spotipy.Spotify(auth=token)
     user_id = sp.current_user()['id']
     playlist = sp.user_playlist_create(user_id, name, public=True)
