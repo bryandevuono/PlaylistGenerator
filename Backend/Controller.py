@@ -26,7 +26,7 @@ sp_oauth = SpotifyOAuth(
 def process_genre(genre, token):
     try:
         #generate the songs
-        search_results = Requests.search_tracks_by_genre(genre, 20, token)
+        search_results = Requests.search_tracks_by_genre(genre, 12, token)
         print("Track URIs:")
         for uri in search_results:
             print(uri)
