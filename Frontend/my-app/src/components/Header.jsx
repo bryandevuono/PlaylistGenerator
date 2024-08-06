@@ -9,7 +9,7 @@ const Header = () => {
         window.open("http://127.0.0.1:5000/api/login");
     }
     return(
-        <header>
+        <header className='header'>
             <span className='headertext'>Made for</span>
             <img alt='' src={logo} className='spotifylogo'></img>
             <Link to='/'><img alt='' src={headerimage} className='headerimage'></img></Link>

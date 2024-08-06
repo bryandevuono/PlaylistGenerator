@@ -14,12 +14,12 @@ const Custom = () => {
   };
 
   return (
-    <div className='homepage'>
-      <div className='text'>
+    <div className='custom'>
+      <div >
         <br />
         <br />
         <br />
-        <p>What kind of playlist do you want?:</p>
+        <p className='customtext'>What kind of playlist do you want?:</p>
       </div>
       <br />
       <br />
