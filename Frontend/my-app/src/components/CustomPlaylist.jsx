@@ -28,7 +28,7 @@ const Custom = () => {
       </div>
       <br />
       <br />
-      <div className='buttons'>
+      <div className='buttons-custom'>
         <button className='btn' onClick={handleConfirm}>
           Confirm
         </button>

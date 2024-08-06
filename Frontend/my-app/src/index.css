@@ -55,14 +55,15 @@ body {
   border-radius: 25px;
   font-family: arial;
   color: white;
-  transform: translateX(-100%);
-  animation: slideIn 1s forwards;
+  animation: fadeIn 1s ease-in forwards;
 }
 
-@keyframes slideIn {
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
   to {
       opacity: 1;
-      transform: translateX(0);
   }
 }
 .homepage{
@@ -81,8 +82,7 @@ body {
   text-align: center;
   font-family: arial;
   color: white;
-  transform: translateX(-100%);
-  animation: slideIn 1s forwards;
+  animation: fadeIn 1s ease-in forwards;
 }
 
 .button{
@@ -97,10 +97,14 @@ body {
   text-align: center;
   color: blue;
   height: 500px;
-  transform: translateX(-100%);
-  animation: slideIn 1s forwards;
+  animation: fadeIn 1s ease-in forwards;
 }
-
+.buttons-custom{
+  margin-top: -20px;
+  text-align: center;
+  color: blue;
+  height: 500px;
+}
 .textarea{
   margin-top: -20px;
   text-align: center;
