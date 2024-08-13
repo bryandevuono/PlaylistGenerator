@@ -49,15 +49,6 @@ body {
 .loginbtn:hover{
   cursor: pointer;
 }
-.homepagetext{
-  padding: 30px 0;
-  text-align: center;
-  border-radius: 25px;
-  font-family: arial;
-  color: white;
-  transform: translateX(-100%);
-  animation: slideIn 1s forwards;
-}
 
 @keyframes slideIn {
   to {
@@ -65,24 +56,43 @@ body {
       transform: translateX(0);
   }
 }
+
 .homepage{
-  align-items: center;
-  justify-content: center;
   border: 3px solid rgb(60, 71, 221);
   border-radius: 25px;
   background-color: black;
   padding: 20px 0;
+  height: 80%;
+}
+.homepagetext{
+  position: fixed;
+  top: 23%;
+  left: 19%;
+  padding: 30px 0;
+  text-align: center;
+  border-radius: 25px;
+  font-family: arial;
+  color: white;
+  font-size: 20px;
+}
+.homepageImg{
+  position: fixed;
+  right: 20%;
+  top: 13%;
+  height: 750px;
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 25px;
 }
 
 .text{
-  display: flex;
-  justify-content: center;
-  margin-top: -20px;
-  text-align: center;
+  left: 19%;
+  margin-top: -10px;
+  top: 33%;
+  text-align: left;
   font-family: arial;
   color: white;
-  transform: translateX(-100%);
-  animation: slideIn 1s forwards;
+  font-size: 16px;
+  position: fixed;
 }
 
 .button{
@@ -93,12 +103,13 @@ body {
 }
 
 .buttons{
+  top: 46%;
   margin-top: -20px;
   text-align: center;
   color: blue;
-  height: 500px;
-  transform: translateX(-100%);
-  animation: slideIn 1s forwards;
+  height: 250px;
+  left: -23.5%;
+  position: relative;
 }
 
 .textarea{
@@ -113,7 +124,7 @@ body {
   border: 3px solid rgb(60, 71, 221);
   border-radius: 25px;
   background-color: black;
-  padding: 20px 0;
+  padding: 30px 0;
 }
 
 .customtext{
@@ -123,6 +134,11 @@ body {
   position: relative;
 }
 
+.buttons-custom{
+  position: relative;
+  left: 43.5%;
+  padding: 30px 0;
+}
 .preview{
   padding: 30px 30px;
   position: absolute;

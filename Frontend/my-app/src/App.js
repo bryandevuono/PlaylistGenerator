@@ -7,6 +7,7 @@ import Custom from './components/CustomPlaylist.jsx';
 import Genre from './components/GenrePlaylist.jsx';
 import Result from './components/Result.jsx';
 import Mood from './components/MoodPlaylist.jsx';
+import homepageImage from './img/Inleiding-219662413-1200x768.jpg';
 function App() {
   return (
     <Router>
@@ -32,7 +33,7 @@ function Home() {
         Unlock Your Perfect Soundtrack!
         <br/>
         <br/>
-        Introducing Playlist Genie, your ultimate music companion for crafting the perfect playlist! <br/>Whether you’re looking to set the mood for a party, chill out after a long day, or <br/>discover new favorites, Playlist Genie makes it easy to generate personalized playlists tailored to your unique taste.
+        Introducing Playlist Genie, your ultimate music companion for crafting the perfect playlist! <br/>Whether you’re looking to set the mood for a party, chill out after a long day, or <br/>discover new favorites, Playlist Genie makes it easy to generate personalized playlists tailored to you.
         <br/><br/>
         Make a playlist based on:
       </p>
@@ -46,6 +47,8 @@ function Home() {
       <br/><br/>
       <Link to = '/custom'><button className='btn'>Custom</button></Link>
       </div>
+      <img className="homepageImg" alt="" src={homepageImage}></img>
+      <br/>
     </div>
   );
 }
