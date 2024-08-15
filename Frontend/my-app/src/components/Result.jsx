@@ -45,7 +45,7 @@ const Result = () =>{
     window.open("https://www.x.com/")
   }
   return (
-    <div className='homepage'>
+    <div className='resultpage'>
       <br/><br/>
       <div className='resulttext'>
         <p>Here is your Playlist!<br/>You can copy the link to access it:</p>

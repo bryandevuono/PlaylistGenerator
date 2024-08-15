@@ -62,7 +62,7 @@ body {
   border-radius: 25px;
   background-color: black;
   padding: 20px 0;
-  height: 80%;
+  height: 81%;
 }
 .homepagetext{
   position: fixed;
@@ -113,30 +113,36 @@ body {
 }
 
 .textarea{
-  margin-top: -20px;
-  text-align: center;
+  position: relative;
+  left: 42%;
+  top: 16.5%
+}
+.textbox{
+  border: 2px solid rgb(64, 71, 207);
+  border-radius: 18px;
   font-family: arial;
 }
 
 .custom{
-  align-items: center;
-  justify-content: center;
   border: 3px solid rgb(60, 71, 221);
   border-radius: 25px;
   background-color: black;
   padding: 30px 0;
+  height: 81%;
 }
 
 .customtext{
   font-family: arial;
   color: white;
   left: 43.5%;
-  position: relative;
+  position: absolute;
+  top: 30%;
 }
 
 .buttons-custom{
   position: relative;
-  left: 43.5%;
+  top: 13%;
+  left: 42.5%;
   padding: 30px 0;
 }
 .preview{
@@ -223,4 +229,12 @@ body {
   position: absolute;
   top: 50%;
   left: 22%;
+}
+
+.resultpage{
+  border: 3px solid rgb(60, 71, 221);
+  border-radius: 25px;
+  background-color: black;
+  padding: 20px 0;
+  height: 85%;
 }
