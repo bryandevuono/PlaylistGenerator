@@ -13,7 +13,7 @@ const Header = () => {
             <span className='headertext'>Made for</span>
             <img alt='' src={logo} className='spotifylogo'></img>
             <Link to='/'><img alt='' src={headerimage} className='headerimage'></img></Link>
-            <p onClick={login} className='loginbtn'>Login</p>
+            <p onClick={login} className='loginbtn'>Login to Spotify</p>
         </header>
     );
 }   
