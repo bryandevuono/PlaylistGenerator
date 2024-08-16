@@ -138,11 +138,17 @@ body {
   position: absolute;
   top: 30%;
 }
-
-.buttons-custom{
-  position: relative;
-  top: 13%;
+.text-genre{
+  font-family: arial;
+  color: white;
   left: 42.5%;
+  position: absolute;
+  top: 30%;
+}
+.buttons-custom{
+  position: flex;
+  top: 13%;
+  left: 44.5%;
   padding: 30px 0;
 }
 .preview{
@@ -174,17 +180,24 @@ body {
 }
 
 .dropdown{
-  margin-top: -20px;
   position: relative;
-  left: 759px;
+  top: 35%;
+  left: 38%;
 }
 
 .dropdownbox{
-  width: 190px;
+  width: 210px;
   height: 50px;
   text-align: center;
+  border: 2px solid rgb(64, 71, 207);
+  border-radius: 18px;
+  font-family: arial;
 }
-
+.buttons-genre{
+  position: relative;
+  left: 41.5%;
+  top: 35%;
+}
 .previewbox{
   border-radius: 15px;
 }

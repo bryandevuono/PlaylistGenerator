@@ -14,7 +14,7 @@ const Genre = () => {
 
   return (
     <div className='homepage'>
-      <div className='text'>
+      <div className='text-genre'>
         <br />
         <br />
         <br />
@@ -33,7 +33,7 @@ const Genre = () => {
       </div>
       <br />
       <br />
-      <div className='buttons'>
+      <div className='buttons-genre'>
         <button className='btn' onClick={handleConfirm}>
           Confirm
         </button>
