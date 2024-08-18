@@ -8,6 +8,7 @@ import Genre from './components/GenrePlaylist.jsx';
 import Result from './components/Result.jsx';
 import Mood from './components/MoodPlaylist.jsx';
 import homepageImage from './img/Inleiding-219662413-1200x768.jpg';
+import homepageImage2 from './img/User flow-bro.jpg';
 function App() {
   return (
     <Router>
@@ -49,6 +50,13 @@ function Home() {
       </div>
       <img className="homepageImg" alt="" src={homepageImage}></img>
       <br/>
+      
+      <p className='description-custom'>The custom query function is designed to create<br/> personalized playlists based on a user's specific preferences. <br/>This function accepts a range of input parameters,<br/> including music genres, mood, tempo, era, <br/>and artist preferences, to generate a curated <br/> playlist that aligns with the user's unique taste</p>
+      
+      <img src={homepageImage2} className="homepageImg2" alt=''></img>
+      <div className='get-started'>
+        <Link to = '/custom'><button className='btn'>Get Started</button></Link>
+      </div>
     </div>
   );
 }
