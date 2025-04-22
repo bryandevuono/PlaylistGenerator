@@ -14,27 +14,17 @@ const Custom = () => {
   };
 
   return (
-    <div className='custom'>
-      <div >
-        <br />
-        <br />
-        <br />
+    <div className='menu-screen'>
+      <div>
         <p className='customtext'>What kind of playlist do you want?:</p>
       </div>
-      <br />
-      <br />
-      <br />
       <div className='textarea'>
         <textarea id='textarea' className='textbox'></textarea>
       </div>
-      <br />
-      <br />
       <div className='buttons-custom'>
         <button className='btn' onClick={handleConfirm}>
           Confirm
         </button>
-        <br />
-        <br />
         <Link to='/'>
           <button className='btn'>Back</button>
         </Link>

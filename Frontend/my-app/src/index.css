@@ -128,10 +128,10 @@ body {
   font-family: arial;
 }
 
-.custom{
-  border: 3px solid rgb(60, 71, 221);
+.menu-screen{
+  /*border: 3px solid rgb(60, 71, 221);*/
   border-radius: 25px;
-  background-color: black;
+  background-color: white;
   padding: 30px 0;
   height: 81%;
   display: flex;
@@ -148,9 +148,6 @@ body {
 .text-genre{
   font-family: arial;
   color: white;
-  left: 42.5%;
-  position: absolute;
-  top: 30%;
 }
 .buttons-custom{
   padding: 30px 0;
@@ -184,12 +181,6 @@ body {
   width: 300px;
 }
 
-.dropdown{
-  position: relative;
-  top: 35%;
-  left: 38%;
-}
-
 .dropdownbox{
   width: 210px;
   height: 50px;
@@ -197,11 +188,6 @@ body {
   border: 2px solid rgb(64, 71, 207);
   border-radius: 18px;
   font-family: arial;
-}
-.buttons-genre{
-  position: relative;
-  left: 41.5%;
-  top: 35%;
 }
 .previewbox{
   border-radius: 15px;
